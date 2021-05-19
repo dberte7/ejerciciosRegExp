@@ -2,6 +2,7 @@ document.getElementById('boton').addEventListener('click', (event) => {
     event.preventDefault()
     checkEmail();
     checkPassword();
+    checkRace()
 })
 
 
@@ -21,6 +22,17 @@ let checkPassword = () => {
     const validarPassword = /^[\w]{1}[\w\W?]{5,19}/
     
     if (password.match(validarPassword)) {
+        console.log('true')
+    } else {
+        console.log('false')
+    }
+}
+
+let checkRace = () => {
+    const Race = document.getElementById('race1').value
+    const validarRace = /^Humano$|^Elfo$|^Hobbit$|^Enano$/
+    
+    if (Race.match(validarRace)) {
         console.log('true')
     } else {
         console.log('false')

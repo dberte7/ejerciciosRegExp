@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="mail">Email: </label>
+        <input type="email" name="mail" id="mail" autocomplete="username">
+        <br>
+        <label for="psswrd">Contraseña: </label>
+        <input type="password" name="psswrd" id="psswrd" autocomplete="current-password">
+        <br>
+        <label for="race">Raza: </label>
+        <input list="race" name="race" id="race1"/></label>
+        <datalist id="race">
+        <option value="Humano">
+        <option value="Elfo">
+        <option value="Enano">
+        <option value="Hobbit">
+        </datalist>
+        <br>
+        <button type="submit" id="boton">Enviar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
